@@ -1,6 +1,6 @@
 package lambton.employee;
 
-import lambton.Gender;
+import lambton.utils.Gender;
 import lambton.vehicle.Vehicle;
 
 public class Faculty extends Employee {

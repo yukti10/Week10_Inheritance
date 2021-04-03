@@ -1,4 +1,4 @@
-package lambton;
+package lambton.base;
 
 public interface IDisplay {
 }

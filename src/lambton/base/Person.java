@@ -1,5 +1,6 @@
-package lambton;
+package lambton.base;
 
+import lambton.utils.Gender;
 import lambton.vehicle.Vehicle;
 
 public class Person {

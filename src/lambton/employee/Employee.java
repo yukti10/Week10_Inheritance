@@ -1,7 +1,7 @@
 package lambton.employee;
 
-import lambton.Gender;
-import lambton.Person;
+import lambton.utils.Gender;
+import lambton.base.Person;
 import lambton.vehicle.Vehicle;
 
 public class Employee  extends Person {
