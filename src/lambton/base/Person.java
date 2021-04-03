@@ -3,7 +3,7 @@ package lambton.base;
 import lambton.utils.Gender;
 import lambton.vehicle.Vehicle;
 
-public class Person {
+public abstract class Person {
     int id;
     String firstName;
     String lastName;
@@ -58,5 +58,7 @@ public class Person {
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
+
+    public abstract String getType();
 }
 
