@@ -1,6 +1,7 @@
 package lambton.employee;
 
 import lambton.utils.Gender;
+import lambton.utils.utils;
 import lambton.vehicle.Vehicle;
 
 public class PartTime extends Faculty{
@@ -45,7 +46,7 @@ public class PartTime extends Faculty{
         System.out.println("Employee hours worked:"+this.getNoHoursWorked());
 
         System.out.println("Employee pay/hr:"+this.getPayPerHours());
-        System.out.println("Employee Total salary"+this.calculateTotalSalary());
+        System.out.println("Employee Total salary"+ utils.currencyFormat(this.calculateTotalSalary()));
         if (this.getVehicle()==null){
             System.out.println("Employee do not have vehicle");
         }

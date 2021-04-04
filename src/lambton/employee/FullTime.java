@@ -1,6 +1,7 @@
 package lambton.employee;
 
 import lambton.utils.Gender;
+import lambton.utils.utils;
 import lambton.vehicle.Vehicle;
 
 public class FullTime extends Faculty {
@@ -19,9 +20,9 @@ public class FullTime extends Faculty {
         System.out.println("Employee Last Name:" +this.getLastName());
         System.out.println("Employee Gender:"+this.getGender());
         System.out.println("Employee Department:"+this.getDepartment());
-        System.out.println("Employee base Salary:"+this.getBaseSalary());
-        System.out.println("Employee Bonus:"+this.getBonus());
-        System.out.println("Employee Total salary:"+this.calculateTotalSalary());
+        System.out.println("Employee base Salary:"+utils.currencyFormat(this.getBaseSalary()));
+        System.out.println("Employee Bonus:"+ utils.currencyFormat(this.getBonus()));
+        System.out.println("Employee Total salary:"+utils.currencyFormat(this.calculateTotalSalary()));
         if (this.getVehicle()==null){
             System.out.println("Employee do not have vehicle");
         }
