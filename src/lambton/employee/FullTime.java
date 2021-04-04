@@ -6,6 +6,25 @@ import lambton.vehicle.Vehicle;
 public class FullTime extends Faculty {
     double bonus;
 
+    @Override
+    public void display() {
+        System.out.println("Employee type:"+this.getType());
+        System.out.println("Employee ID:"+this.getId());
+        System.out.println("Employee First Name:"+this.getFirstName());
+        System.out.println("Employee Last Name:" +this.getLastName());
+        System.out.println("Employee Gender:"+this.getGender());
+        System.out.println("Employee Department:"+this.getDepartment());
+        System.out.println("Employee Bonus:"+this.getBonus());
+        //System.out.println("Employee Total salary"+this.getTotalSalary());
+        if (this.getVehicle()==null){
+            System.out.println("Employee do not have vehicle");
+        }
+        else {
+            this.getVehicle().display();
+        }
+        System.out.println("============================================================================");
+    }
+
     public FullTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double totalSalary, double bonus) {
         super(id, firstName, lastName, gender, vehicle, totalSalary);
         this.bonus = bonus;
@@ -17,5 +36,10 @@ public class FullTime extends Faculty {
 
     public void setBonus(double bonus) {
         this.bonus = bonus;
+    }
+
+    @Override
+    public String getType() {
+        return "Full Time employee";
     }
 }

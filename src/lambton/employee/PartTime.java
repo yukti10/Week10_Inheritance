@@ -28,4 +28,9 @@ public class PartTime extends Faculty{
     public void setPayPerHours(double payPerHours) {
         this.payPerHours = payPerHours;
     }
+
+    @Override
+    public String getType() {
+        return "Part Time Employee";
+    }
 }

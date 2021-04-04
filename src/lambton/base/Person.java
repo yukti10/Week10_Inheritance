@@ -3,7 +3,7 @@ package lambton.base;
 import lambton.utils.Gender;
 import lambton.vehicle.Vehicle;
 
-public abstract class Person {
+public abstract class Person implements IDisplay{
     int id;
     String firstName;
     String lastName;
