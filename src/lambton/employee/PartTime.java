@@ -43,8 +43,9 @@ public class PartTime extends Faculty{
         System.out.println("Employee Gender:"+this.getGender());
         System.out.println("Employee Department:"+this.getDepartment());
         System.out.println("Employee hours worked:"+this.getNoHoursWorked());
-        System.out.println("Employee Total salary"+this.calculateTotalSalary());
+
         System.out.println("Employee pay/hr:"+this.getPayPerHours());
+        System.out.println("Employee Total salary"+this.calculateTotalSalary());
         if (this.getVehicle()==null){
             System.out.println("Employee do not have vehicle");
         }
