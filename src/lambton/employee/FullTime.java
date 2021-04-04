@@ -7,6 +7,11 @@ public class FullTime extends Faculty {
     double bonus;
 
     @Override
+    public double calculateTotalSalary() {
+        return this.baseSalary+this.bonus;
+    }
+
+    @Override
     public void display() {
         System.out.println("Employee type:"+this.getType());
         System.out.println("Employee ID:"+this.getId());
@@ -14,8 +19,9 @@ public class FullTime extends Faculty {
         System.out.println("Employee Last Name:" +this.getLastName());
         System.out.println("Employee Gender:"+this.getGender());
         System.out.println("Employee Department:"+this.getDepartment());
+        System.out.println("Employee base Salary:"+this.getBaseSalary());
         System.out.println("Employee Bonus:"+this.getBonus());
-        //System.out.println("Employee Total salary"+this.getTotalSalary());
+        System.out.println("Employee Total salary:"+this.calculateTotalSalary());
         if (this.getVehicle()==null){
             System.out.println("Employee do not have vehicle");
         }
@@ -25,8 +31,8 @@ public class FullTime extends Faculty {
         System.out.println("============================================================================");
     }
 
-    public FullTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double totalSalary, double bonus) {
-        super(id, firstName, lastName, gender, vehicle, totalSalary);
+    public FullTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double baseSalary, String department, double bonus) {
+        super(id, firstName, lastName, gender, vehicle, baseSalary, department);
         this.bonus = bonus;
     }
 

@@ -40,4 +40,6 @@ public abstract class student extends Person {
     public void setResult(String result) {
         this.result = result;
     }
+
+
 }

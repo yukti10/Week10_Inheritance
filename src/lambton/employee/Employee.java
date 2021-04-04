@@ -5,18 +5,19 @@ import lambton.base.Person;
 import lambton.vehicle.Vehicle;
 
 public abstract class Employee  extends Person {
-   double totalSalary;
+   double baseSalary;
 
     public Employee(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double totalSalary) {
         super(id, firstName, lastName, gender, vehicle);
-        this.totalSalary = totalSalary;
+        this.baseSalary = totalSalary;
     }
 
-    public double getTotalSalary() {
-        return totalSalary;
+    public double getBaseSalary() {
+        return baseSalary;
     }
 
-    public void setTotalSalary(double totalSalary) {
-        this.totalSalary = totalSalary;
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
     }
+    public abstract double calculateTotalSalary();
 }
