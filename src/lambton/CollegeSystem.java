@@ -13,9 +13,18 @@ import lambton.vehicle.Car;
 import java.util.ArrayList;
 
 public class CollegeSystem {
-    public static void main(String[] args){
-        //Create Array list
+    public static void performOperation() throws ArithmeticException,ArrayIndexOutOfBoundsException{
+        System.out.println("START=====================");
+        int a = 10;
+        int b = 0;
+        int x[] = new int[]{1,2,3,4,5};
+        int c ;
+        if (b==0){
+            throw new ArithmeticException("b is 0");
+        }
 
+    }
+    public static void main(String[] args){
         ArrayList<Person>personArrayList = new ArrayList<>();
 
         /*Create two employees

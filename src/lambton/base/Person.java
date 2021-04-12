@@ -3,7 +3,7 @@ package lambton.base;
 import lambton.utils.Gender;
 import lambton.vehicle.Vehicle;
 
-public abstract class Person implements IDisplay{
+public abstract class Person implements IDisplay{//Polymorphism
     int id;
     String firstName;
     String lastName;

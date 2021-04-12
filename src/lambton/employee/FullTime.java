@@ -7,8 +7,8 @@ import lambton.vehicle.Vehicle;
 public class FullTime extends Faculty {
     double bonus;
 
-    @Override
-    public double calculateTotalSalary() {
+    @Override//Overriding super class methods
+        public double calculateTotalSalary() {
         return this.baseSalary+this.bonus;
     }
 

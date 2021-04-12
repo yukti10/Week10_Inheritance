@@ -1,5 +1,5 @@
 package lambton.base;
 
-public interface IDisplay {
+public interface IDisplay {//Interfaces
     public void display();
 }

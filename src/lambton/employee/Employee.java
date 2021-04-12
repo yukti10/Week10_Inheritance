@@ -4,7 +4,7 @@ import lambton.utils.Gender;
 import lambton.base.Person;
 import lambton.vehicle.Vehicle;
 
-public abstract class Employee  extends Person {
+public abstract class Employee  extends Person {//abstraction
    double baseSalary;
 
     public Employee(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double totalSalary) {
