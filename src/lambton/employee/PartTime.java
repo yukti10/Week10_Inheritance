@@ -1,5 +1,6 @@
 package lambton.employee;
 
+import lambton.Exceptions.InvalidSalaryException;
 import lambton.utils.Gender;
 import lambton.utils.utils;
 import lambton.vehicle.Vehicle;
@@ -13,7 +14,7 @@ public class PartTime extends Faculty{
         return this.baseSalary+(this.payPerHours*this.noHoursWorked);
     }
 
-    public PartTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double baseSalary, String department, double noHoursWorked, double payPerHours) {
+    public PartTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double baseSalary, String department, double noHoursWorked, double payPerHours)throws InvalidSalaryException {
         super(id, firstName, lastName, gender, vehicle, baseSalary, department);
         this.noHoursWorked = noHoursWorked;
         this.payPerHours = payPerHours;

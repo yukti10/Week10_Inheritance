@@ -1,5 +1,6 @@
 package lambton.employee;
 
+import lambton.Exceptions.InvalidSalaryException;
 import lambton.utils.Gender;
 import lambton.utils.utils;
 import lambton.vehicle.Vehicle;
@@ -32,7 +33,7 @@ public class FullTime extends Faculty {
         System.out.println("============================================================================");
     }
 
-    public FullTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double baseSalary, String department, double bonus) {
+    public FullTime(int id, String firstName, String lastName, Gender gender, Vehicle vehicle, double baseSalary, String department, double bonus) throws InvalidSalaryException {
         super(id, firstName, lastName, gender, vehicle, baseSalary, department);
         this.bonus = bonus;
     }
